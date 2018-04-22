@@ -1,5 +1,5 @@
 # YJAVPlayer
-这个AVPlayer的一个子类，实现了缓存功能
+这个AVPlayer的一个子类，实现了缓存功能，再有网络的情况下访问一个url,可变直接播放，并且实现缓存，缓存过的资源在没有网络的情况下，可以读出缓存过的资源。
 
 1. 就是把之前的AVPlayer 换成YJZAVPlayer 即可，就可以实现边下边播的功能了
 2. YJZAVPlayer 具有AVPlayer的所有属性与方法
