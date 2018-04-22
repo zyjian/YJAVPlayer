@@ -21,7 +21,7 @@ static YJAVPlayer* _instance = nil;
     return _instance;
 }
 
--(void)playWith:(NSString *)strUrl {
+-(void)playWithUrlStr:(NSString *)strUrl; {
     NSURL *url = [NSURL URLWithString:strUrl];
     AVPlayerItem *playerItem = [AVPlayerItem mc_playerItemWithRemoteURL:url error:nil];
     [_instance replaceCurrentItemWithPlayerItem:playerItem];

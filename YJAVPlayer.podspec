@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "YJAVPlayer"
-  s.version      = "0.0.1"
+  s.version      = "1.0.1"
   s.summary      = "YJAVPlayer实现了边下边播功能"
 
   # This description is used to generate tags and improve search results.
@@ -37,8 +37,8 @@ Pod::Spec.new do |s|
   #  Popular ones are 'MIT', 'BSD' and 'Apache License, Version 2.0'.
   #
 
-  #s.license      = "MIT"
-  s.license      = { :type => "MIT", :file => "FILE_LICENSE" }
+  s.license      = "MIT"
+  #s.license      = { :type => "MIT", :file => "FILE_LICENSE" }
 
 
   # ――― Author Metadata  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -51,9 +51,9 @@ Pod::Spec.new do |s|
   #  profile URL.
   #
 
-  s.author             = { "朱允见" => "719307805@qq.com" }
+  #s.author             = { "朱允见" => "719307805@qq.com" }
   # Or just: s.author    = "朱允见"
-  # s.authors            = { "朱允见" => "719307805@qq.com" }
+  s.authors            = { "朱允见" => "719307805@qq.com" }
   # s.social_media_url   = "http://twitter.com/朱允见"
 
   # ――― Platform Specifics ――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -91,8 +91,8 @@ Pod::Spec.new do |s|
 
 
 
-  s.source_files  = "Classes", "Classes/**/*.{h,m}"
-  s.exclude_files = "Classes/Exclude"
+  s.source_files  = "Classes", "Classes/*.{h,m}"
+  #s.exclude_files = "Classes/Exclude"
 
   # s.public_header_files = "YJAVPlayer/**/*.h"
 
@@ -130,7 +130,7 @@ Pod::Spec.new do |s|
   #  where they will only apply to your library. If you depend on other Podspecs
   #  you can include multiple dependencies to ensure it works.
 
-  # s.requires_arc = true
+  s.requires_arc = true
 
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   # s.dependency "JSONKit", "~> 1.4"
