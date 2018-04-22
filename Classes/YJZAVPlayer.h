@@ -11,7 +11,7 @@
  就是把之前的AVPlayer 换成YJAVPlayer 即可，就可以实现边下边播的功能了
  
  #import "ViewController.h"
- #import <YJAVPlayer/YJAVPlayer.h>
+ #import <YJAVPlayer/YJZAVPlayer.h>
  
  @interface ViewController ()
  @property(nonatomic,strong)YJAVPlayer *player;
@@ -36,7 +36,7 @@
 #import <Foundation/Foundation.h>
 #import <AVFoundation/AVFoundation.h>
 
-@interface YJAVPlayer : AVPlayer
+@interface YJZAVPlayer : AVPlayer
 
 +(instancetype)sharePlayer;
 

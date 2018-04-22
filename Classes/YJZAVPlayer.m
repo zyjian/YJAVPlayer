@@ -6,12 +6,12 @@
 //  Copyright © 2018年 cn.jy. All rights reserved.
 //
 
-#import "YJAVPlayer.h"
+#import "YJZAVPlayer.h"
 #import "AVPlayerItem+MCCacheSupport.h"
 
-@implementation YJAVPlayer
+@implementation YJZAVPlayer
 
-static YJAVPlayer* _instance = nil;
+static YJZAVPlayer* _instance = nil;
 
 +(instancetype)sharePlayer {
     static dispatch_once_t onceToken;
