@@ -1,8 +1,8 @@
 # YJAVPlayer
 这个AVPlayer的一个子类，实现了缓存功能
 
-1.就是把之前的AVPlayer 换成YJZAVPlayer 即可，就可以实现边下边播的功能了
-2.YJZAVPlayer 具有AVPlayer的所有属性与方法
+1. 就是把之前的AVPlayer 换成YJZAVPlayer 即可，就可以实现边下边播的功能了
+2. YJZAVPlayer 具有AVPlayer的所有属性与方法
 ###使用方法
 
 .h
