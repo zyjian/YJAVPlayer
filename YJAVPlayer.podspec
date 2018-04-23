@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "YJAVPlayer"
-  s.version      = "1.0.2"
+  s.version      = "1.1.2"
   s.summary      = "YJAVPlayer实现了边下边播功能"
 
   # This description is used to generate tags and improve search results.

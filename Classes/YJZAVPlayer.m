@@ -21,9 +21,18 @@ static YJZAVPlayer* _instance = nil;
     return _instance;
 }
 
--(void)playWithUrlStr:(NSString *)strUrl; {
-    NSURL *url = [NSURL URLWithString:strUrl];
-    AVPlayerItem *playerItem = [AVPlayerItem mc_playerItemWithRemoteURL:url error:nil];
+-(void)playWithPath:(NSString *)pathStr {
+    
+    AVPlayerItem *playerItem = nil;
+    NSFileManager *fileManager = [NSFileManager defaultManager];
+    if ([fileManager fileExistsAtPath:pathStr]){
+        playerItem = [[AVPlayerItem alloc]initWithURL: [NSURL fileURLWithPath:pathStr]];
+        [_instance replaceCurrentItemWithPlayerItem:playerItem];
+    }else{
+        NSURL *url = [NSURL URLWithString:pathStr];
+        playerItem = [AVPlayerItem mc_playerItemWithRemoteURL:url error:nil];
+    }
+    
     [_instance replaceCurrentItemWithPlayerItem:playerItem];
     [_instance play];
 }
